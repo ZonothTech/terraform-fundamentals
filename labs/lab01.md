@@ -199,10 +199,8 @@ Terraform always depends on the provider's auth and permissions.
 ### Step 12: Run destroy again
 
 ```bash
-terraform destroy
+terraform destroy -auto-approve
 ```
-
-Confirm with `yes`. The repository is deleted and the state is now empty.
 
 > **Before Lab 02:** re-create the repo with `terraform apply` (you'll keep building
 > on it), or simply move on — Lab 02 starts from this same folder.
