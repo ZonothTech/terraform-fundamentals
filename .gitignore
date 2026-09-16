@@ -1,0 +1,38 @@
+# =========================== Terraform ===========================
+# Local provider/module cache
+**/.terraform/
+
+# State — never commit it: it contains resource attributes and often secrets
+*.tfstate
+*.tfstate.*
+*.tfstate.backup
+
+# Saved plan files (the labs use `terraform plan -out lastPlan`)
+*.tfplan
+lastPlan
+myplan
+
+# Variable files — they carry tokens, subscription ids and personal values.
+# Commit only the *.example ones. (Files already tracked stay tracked.)
+*.tfvars
+*.tfvars.json
+!*.tfvars.example
+!*.auto.tfvars.example
+
+# Crash logs and local overrides
+crash.log
+crash.*.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# NOTE: .terraform.lock.hcl is NOT ignored on purpose — commit it, so every
+# student resolves the same provider versions.
+
+# =========================== OS / editor =========================
+.DS_Store
+Thumbs.db
+*.swp
+*~
+.idea/

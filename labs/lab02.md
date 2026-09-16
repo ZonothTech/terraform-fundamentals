@@ -59,7 +59,7 @@ provider "github" {}
 resource "github_repository" "course_repo" {
   name        = "terraform-training"
   description = "My Terraform training project"
-  visibility  = "private"
+  visibility  = "public"
   has_issues  = true
   has_wiki    = false
 }
@@ -85,7 +85,7 @@ that reference is what makes Terraform create the repo first.
 ```hcl
 resource "github_issue_label" "bug" {
   repository = github_repository.course_repo.name   # implicit dependency
-  name       = "bug"
+  name       = "erro"
   color      = "d73a4a"
 }
 ```
