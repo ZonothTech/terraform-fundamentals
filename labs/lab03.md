@@ -87,7 +87,7 @@ Locals are values you compute once and reuse. Add a `locals` block:
 
 ```hcl
 locals {
-  common_labels = ["bug", "enhancement", "question"]
+  common_labels = ["erro", "melhoria", "duvida"]
 }
 
 resource "github_issue_label" "labels" {
