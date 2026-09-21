@@ -50,7 +50,7 @@ variable "repo_name" {
 variable "repo_private" {
   description = "Whether the repository is private"
   type        = bool
-  default     = true
+  default     = false
 }
 
 variable "welcome_message" {
